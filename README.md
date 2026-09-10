@@ -256,8 +256,23 @@ Default candidate settings:
 
 ```text
 EDGE_DISTANCE_PRIOR_SIGMA_UM = 5.0
-EDGE_DISTANCE_PRIOR_WEIGHT   = 0.35
+EDGE_DISTANCE_PRIOR_WEIGHT   = 0.0  # recovery baseline; prior is opt-in
 ```
+
+### 2026-09-10 Kaggle regression diagnosis
+
+The Kaggle run for script version `348580977` completed successfully in 442.1 seconds on two T4 GPUs, processed all four test datasets, and wrote a structurally valid submission. Its reported leaderboard score was 0.885.
+
+The decisive log comparison is:
+
+| Run | Raw nodes | Raw edges | Clean rows | Final augmented rows |
+|---|---:|---:|---:|---:|
+| Known 0.966 notebook | 134,678 | 127,723 | 265,107 | 271,644 |
+| Distance-prior run, score 0.885 | 134,295 | 127,042 | 264,235 | 271,006 |
+
+The distance-prior run changed only weak-edge ranking before candidate selection and ILP. It did not materially change detection count, runtime, dataset coverage, or submission formatting. The score collapse therefore comes from weak-link identity/topology, not from a Kaggle execution or CSV failure. The new candidate now sets `EDGE_DISTANCE_PRIOR_WEIGHT = 0.0` and uses an exact baseline branch when the weight is zero; the prior remains opt-in for later controlled validation.
+
+The run log also confirms four expected Gurobi-to-SCIP fallbacks because no Gurobi license is present. This is a runtime warning, not the cause of the score loss.
 
 The original notebook is intentionally preserved. Validate this candidate on embryo-disjoint training folds before spending a Kaggle submission.
 
