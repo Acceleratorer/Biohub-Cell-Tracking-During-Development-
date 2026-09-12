@@ -1,0 +1,139 @@
+- generic [ref=e2]:
+  - navigation "Main Kaggle page navigation" [ref=e3]:
+    - generic [ref=e5]:
+      - button "Navigation menu" [ref=e7] [cursor=pointer]: menu
+      - link "Skip to content" [ref=e8] [cursor=pointer]:
+        - /url: "#site-content"
+        - text: Skip tocontent
+      - link "Return to Kaggle home page" [ref=e10] [cursor=pointer]:
+        - /url: /
+    - button "Create" [ref=e12] [cursor=pointer]
+    - generic [ref=e19]:
+      - generic [ref=e21]:
+        - list [ref=e22]:
+          - listitem "Home List Item" [ref=e23]:
+            - link "Home" [ref=e25] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e26]:
+                - generic [aria-hidden] [ref=e29]: explore
+                - paragraph [ref=e31]: Home
+          - listitem "Competitions List Item" [ref=e32]:
+            - link "Competitions" [ref=e34] [cursor=pointer]:
+              - /url: /competitions
+              - generic [ref=e35]:
+                - generic [aria-hidden] [ref=e38]: emoji_events
+                - paragraph [ref=e40]: Competitions
+          - listitem "Benchmarks List Item" [ref=e41]:
+            - link "Benchmarks" [ref=e43] [cursor=pointer]:
+              - /url: /benchmarks
+              - generic [ref=e44]:
+                - generic [aria-hidden] [ref=e47]: leaderboard
+                - paragraph [ref=e49]: Benchmarks
+          - listitem "Game Arena List Item" [ref=e50]:
+            - link "Game Arena" [ref=e52] [cursor=pointer]:
+              - /url: /game-arena
+              - generic [ref=e53]:
+                - generic [aria-hidden] [ref=e56]: smart_toy
+                - paragraph [ref=e58]: Game Arena
+        - list [ref=e59]:
+          - listitem "Data Hub List Item" [ref=e60]:
+            - generic [ref=e61]:
+              - link "Data Hub" [ref=e62] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e63]:
+                  - generic [aria-hidden] [ref=e66]: code
+                  - paragraph [ref=e68]: Data Hub
+              - button "Expand" [ref=e70] [cursor=pointer]: expand_more
+        - list [ref=e71]:
+          - listitem "More on Kaggle List Item" [ref=e72]:
+            - generic [ref=e73]:
+              - link "More on Kaggle" [ref=e74] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e75]:
+                  - generic [aria-hidden] [ref=e78]: format_list_bulleted
+                  - paragraph [ref=e80]: More
+              - button "Expand" [ref=e82] [cursor=pointer]: expand_more
+      - button "Open Active Events dialog View Active Events" [ref=e84] [cursor=pointer]:
+        - generic "Open Active Events dialog" [ref=e86]: auto_awesome_motion
+        - paragraph [ref=e87]: View Active Events
+  - navigation "Main menu, search and your account" [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e93]:
+        - generic [ref=e94]: search
+        - textbox "Search" [ref=e95]
+        - group [aria-hidden]
+      - button "Accelra" [ref=e100] [cursor=pointer]
+  - main [ref=e105]:
+    - generic [ref=e107]:
+      - paragraph [ref=e109]:
+        - text: We have updated our
+        - link "Terms of Service" [ref=e110] [cursor=pointer]:
+          - /url: /terms
+        - text: and
+        - link "Community Guidelines" [ref=e111] [cursor=pointer]:
+          - /url: /community-guidelines
+        - text: . We encourage you to review them.
+      - button "OK, Got it." [ref=e113] [cursor=pointer]
+    - generic [ref=e117]:
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - link "Accelra's profile" [ref=e121] [cursor=pointer]:
+            - /url: /accelra
+            - generic "Accelra" [ref=e122]
+          - generic [ref=e126]:
+            - generic [ref=e127]: Accelra
+            - generic [ref=e129]: · 10h ago · 9 views · Private
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - button "Upvote" [ref=e133] [cursor=pointer]:
+                - generic [ref=e134]: arrow_drop_up
+              - button "0 votes" [ref=e135] [cursor=pointer]: "0"
+            - button "Share" [ref=e136] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e137]: lock
+            - link [ref=e139] [cursor=pointer]:
+              - /url: /code/accelra/biohub-solution-0-970-candidate/edit/run/348727260
+              - button "Edit" [ref=e140]:
+                - generic [aria-hidden] [ref=e141]: edit
+            - button "Download" [ref=e144] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e145]: file_download
+            - button "More options for this notebook" [ref=e148] [cursor=pointer]: more_vert
+        - generic [ref=e151]:
+          - heading "biohub-solution-0.970-candidate" [level=1] [ref=e152]
+          - button "Edit title" [ref=e153] [cursor=pointer]: edit
+      - generic [ref=e155]:
+        - tablist [ref=e162]:
+          - tab "Notebook, 1 of 6" [ref=e163] [cursor=pointer]:
+            - generic [ref=e164]: Notebook
+          - tab "Input, 2 of 6" [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]: Input
+          - tab "Output, 3 of 6" [ref=e167] [cursor=pointer]:
+            - generic [ref=e168]: Output
+          - tab "Logs, 4 of 6" [selected] [ref=e169] [cursor=pointer]:
+            - generic [ref=e170]: Logs
+          - tab "Comments (0), 5 of 6" [ref=e171] [cursor=pointer]:
+            - generic [ref=e172]: Comments (0)
+          - tab "Settings, 6 of 6" [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]: Settings
+        - separator [ref=e176]
+      - generic [ref=e177]:
+        - heading "Logs" [level=2] [ref=e181]
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [aria-hidden] [ref=e185]: check_circle
+            - heading "Successfully ran in 435.4s" [level=5] [ref=e186]
+          - generic [ref=e187]:
+            - generic [ref=e188]:
+              - generic [ref=e189]: Accelerator
+              - paragraph [ref=e190]: GPU T4 x2
+            - generic [ref=e191]:
+              - generic [ref=e192]: Environment
+              - paragraph [ref=e193]:
+                - link "Latest Container Image opens in new window" [ref=e194] [cursor=pointer]:
+                  - /url: https://gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461
+                  - text: Latest Container Image
+                - button [ref=e195] [cursor=pointer]
+            - generic [ref=e197]:
+              - generic [ref=e198]: Output
+              - paragraph [ref=e199]: 28.92 MB
+        - progressbar "Loading" [ref=e201]
+  - alert [ref=e204]

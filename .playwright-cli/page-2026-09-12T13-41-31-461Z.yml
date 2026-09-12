@@ -1,0 +1,728 @@
+- generic [ref=f11e2]:
+  - navigation "Main Kaggle page navigation" [ref=f11e1106]:
+    - generic [ref=f11e5]:
+      - button "Navigation menu" [ref=f11e1107] [cursor=pointer]: menu
+      - link "Skip to content" [ref=f11e1108] [cursor=pointer]:
+        - /url: "#site-content"
+        - text: Skip tocontent
+      - link "Return to Kaggle home page" [ref=f11e1109] [cursor=pointer]:
+        - /url: /
+    - button "Create" [ref=f11e1110] [cursor=pointer]
+    - generic [ref=f11e21]:
+      - list [ref=f11e22]:
+        - listitem "Home List Item" [ref=f11e1111]:
+          - link "Home" [ref=f11e1112] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f11e26]:
+              - generic [aria-hidden] [ref=f11e29]: explore
+              - paragraph [ref=f11e31]: Home
+        - listitem "Competitions List Item" [ref=f11e1113]:
+          - link "Competitions" [ref=f11e1114] [cursor=pointer]:
+            - /url: /competitions
+            - generic [ref=f11e35]:
+              - generic [aria-hidden] [ref=f11e38]: emoji_events
+              - paragraph [ref=f11e40]: Competitions
+        - listitem "Benchmarks List Item" [ref=f11e1115]:
+          - link "Benchmarks" [ref=f11e1116] [cursor=pointer]:
+            - /url: /benchmarks
+            - generic [ref=f11e45]:
+              - generic [aria-hidden] [ref=f11e48]: leaderboard
+              - paragraph [ref=f11e50]: Benchmarks
+        - listitem "Game Arena List Item" [ref=f11e1117]:
+          - link "Game Arena" [ref=f11e1118] [cursor=pointer]:
+            - /url: /game-arena
+            - generic [ref=f11e54]:
+              - generic [aria-hidden] [ref=f11e57]: smart_toy
+              - paragraph [ref=f11e59]: Game Arena
+      - list [ref=f11e60]:
+        - listitem "Data Hub List Item" [ref=f11e1119]:
+          - generic [ref=f11e62]:
+            - link "Data Hub" [ref=f11e1120] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f11e64]:
+                - generic [aria-hidden] [ref=f11e67]: code
+                - paragraph [ref=f11e69]: Data Hub
+            - button "Expand" [ref=f11e1121] [cursor=pointer]: expand_more
+      - list [ref=f11e72]:
+        - listitem "More on Kaggle List Item" [ref=f11e1122]:
+          - generic [ref=f11e74]:
+            - link "More on Kaggle" [ref=f11e1123] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f11e76]:
+                - generic [aria-hidden] [ref=f11e79]: format_list_bulleted
+                - paragraph [ref=f11e81]: More
+            - button "Expand" [ref=f11e1124] [cursor=pointer]: expand_more
+  - navigation "Main menu, search and your account" [ref=f11e1125]:
+    - generic [ref=f11e86]:
+      - generic [ref=f11e90]:
+        - generic [ref=f11e91]: search
+        - textbox "Search" [ref=f11e1126]
+        - group [aria-hidden]
+      - generic [ref=f11e94]:
+        - link [ref=f11e1127] [cursor=pointer]:
+          - /url: /account/login?phase=startSignInTab&returnUrl=%2Fcompetitions%2Fbiohub-cell-tracking-during-development%2Fcode%3FcompetitionId%3D136605%26sortBy%3DscoreDescending%26excludeNonAccessedDatasources%3Dtrue
+          - button "Sign In" [ref=f11e1128]
+        - link [ref=f11e1129] [cursor=pointer]:
+          - /url: /account/login?phase=startRegisterTab&returnUrl=%2Fcompetitions%2Fbiohub-cell-tracking-during-development%2Fcode%3FcompetitionId%3D136605%26sortBy%3DscoreDescending%26excludeNonAccessedDatasources%3Dtrue
+          - button "Register" [ref=f11e1130]
+  - main [ref=f11e101]:
+    - generic [ref=f11e103]:
+      - generic [ref=f11e104]: Kaggle uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic.
+      - generic [ref=f11e105]:
+        - link "Learn more" [ref=f11e1131] [cursor=pointer]:
+          - /url: /cookies
+        - generic [ref=f11e108] [cursor=pointer]: OK, Got it.
+    - generic [ref=f11e111]:
+      - generic [ref=f11e113]:
+        - generic [ref=f11e114]:
+          - link "Biohub's profile" [ref=f11e1132] [cursor=pointer]:
+            - /url: /organizations/biohub
+            - generic "Biohub" [ref=f11e1133]
+          - generic [ref=f11e120]:
+            - generic [ref=f11e121]: Biohub
+            - generic [ref=f11e123]: · Research Code Competition · 17 days to go
+          - generic [ref=f11e124]:
+            - button "Join Competition" [ref=f11e1134] [cursor=pointer]
+            - button "Competition options menu collapsed" [ref=f11e1135] [cursor=pointer]: more_horiz
+        - generic [ref=f11e131]:
+          - heading "Biohub - Cell Tracking During Development" [level=1] [ref=f11e1136]
+          - paragraph [ref=f11e134]: Detect and track zebrafish cells through 3D space and time
+      - generic [ref=f11e138]:
+        - tablist [ref=f11e145]:
+          - tab "Overview, 1 of 7" [ref=f11e1137] [cursor=pointer]:
+            - generic [ref=f11e147]: Overview
+          - tab "Data, 2 of 7" [ref=f11e1138] [cursor=pointer]:
+            - generic [ref=f11e149]: Data
+          - tab "Code, 3 of 7" [selected] [ref=f11e1139] [cursor=pointer]:
+            - generic [ref=f11e151]: Code
+          - tab "Models, 4 of 7" [ref=f11e1140] [cursor=pointer]:
+            - generic [ref=f11e153]: Models
+          - tab "Discussion, 5 of 7" [ref=f11e1141] [cursor=pointer]:
+            - generic [ref=f11e155]: Discussion
+          - tab "Leaderboard, 6 of 7" [ref=f11e1142] [cursor=pointer]:
+            - generic [ref=f11e157]: Leaderboard
+          - tab "Rules, 7 of 7" [ref=f11e1143] [cursor=pointer]:
+            - generic [ref=f11e159]: Rules
+        - separator [ref=f11e161]
+      - generic [ref=f11e163]:
+        - generic [ref=f11e164]:
+          - heading "Notebooks" [level=2] [ref=f11e1144]
+          - button "New Notebook" [ref=f11e1145] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f11e169]: add
+        - generic [ref=f11e171]:
+          - generic [ref=f11e174]:
+            - generic [ref=f11e175]: search
+            - textbox "Search notebooks" [ref=f11e1146]
+            - generic "Filter is added" [ref=f11e1147]:
+              - button "Filters" [ref=f11e1148] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f11e180]: filter_list
+            - group [aria-hidden]
+          - tablist [ref=f11e186]:
+            - tab "All, 1 of 4" [selected] [ref=f11e1149] [cursor=pointer]:
+              - generic [ref=f11e188]: All
+            - tab "Your Work, 2 of 4" [ref=f11e1150] [cursor=pointer]:
+              - generic [ref=f11e190]: Your Work
+            - tab "Shared With You, 3 of 4" [ref=f11e1151] [cursor=pointer]:
+              - generic [ref=f11e192]: Shared With You
+            - tab "Bookmarks, 4 of 4" [ref=f11e1152] [cursor=pointer]:
+              - generic [ref=f11e194]: Bookmarks
+          - generic [ref=f11e198]:
+            - combobox "Select Sort. Public Score currently selected." [active] [ref=f11e1153] [cursor=pointer]:
+              - generic [ref=f11e200]: Public Score
+            - textbox [aria-hidden]: Public Score
+          - generic [ref=f11e202]:
+            - separator [ref=f11e203]
+            - list [ref=f11e205]:
+              - paragraph [ref=f11e1154]: Pinned notebooks
+              - listitem "Cell Tracking Getting Started w/ Nearest Neighbor List Item" [ref=f11e1155]:
+                - generic [ref=f11e1156]:
+                  - link "Cell Tracking Getting Started w/ Nearest Neighbor" [ref=f11e1157] [cursor=pointer]:
+                    - generic [ref=f11e1158]:
+                      - link "inversion's profile (opens in a new tab)" [ref=f11e1162]:
+                        - /url: /inversion
+                        - generic "inversion" [ref=f11e1163]
+                        - generic [aria-hidden] [ref=f11e1168]: keep_pin
+                      - generic [ref=f11e1169]:
+                        - generic [ref=f11e1170]: Cell Tracking Getting Started w/ Nearest Neighbor
+                        - generic [ref=f11e1171]: Updated 3mo ago
+                        - generic [ref=f11e1174]:
+                          - text: "Score: 0.143 ·"
+                          - link "1 comment" [ref=f11e1175]:
+                            - /url: /code/inversion/cell-tracking-getting-started-w-nearest-neighbor/comments
+                          - text: ·
+                          - generic [ref=f11e1176]: Biohub - Cell Tracking During Development
+                  - generic [ref=f11e1177]:
+                    - generic [ref=f11e1178]:
+                      - button "Upvote" [ref=f11e1179] [cursor=pointer]:
+                        - generic [ref=f11e1180]: arrow_drop_up
+                      - generic "559 votes" [ref=f11e1181]: "559"
+                    - generic [ref=f11e1182]:
+                      - generic [ref=f11e1183]:
+                        - img "gold medal" [ref=f11e1184]
+                        - text: Gold
+                      - button "More options for this notebook" [ref=f11e1185] [cursor=pointer]: more_horiz
+              - paragraph [ref=f11e1186]: Unpinned notebooks
+              - listitem "improved-metric-hack-last-call List Item" [ref=f11e1187]:
+                - generic [ref=f11e1188]:
+                  - link "improved-metric-hack-last-call" [ref=f11e1189] [cursor=pointer]:
+                    - generic [ref=f11e1190]:
+                      - link "Aman Atar's profile (opens in a new tab)" [ref=f11e1194]:
+                        - /url: /amanatar
+                        - generic "Aman Atar" [ref=f11e1195]
+                      - generic [ref=f11e1199]:
+                        - generic [ref=f11e1200]: improved-metric-hack-last-call
+                        - generic [ref=f11e1201]:
+                          - generic [ref=f11e1202]:
+                            - text: Notebook copied with edits from
+                            - link "Кирилл Алешин" [ref=f11e1203]:
+                              - /url: /code/kirneo/metric-hack-last-call-update
+                          - text: ·
+                          - generic [ref=f11e1204]: Updated 2mo ago
+                        - generic [ref=f11e1206]:
+                          - text: "Score: 0.966 ·"
+                          - link "0 comments" [ref=f11e1207]:
+                            - /url: /code/amanatar/improved-metric-hack-last-call/comments
+                          - text: ·
+                          - generic [ref=f11e1208]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1209]: "+1"
+                  - generic [ref=f11e1212]:
+                    - generic [ref=f11e1213]:
+                      - button "Upvote" [ref=f11e1214] [cursor=pointer]:
+                        - generic [ref=f11e1215]: arrow_drop_up
+                      - generic "168 votes" [ref=f11e1216]: "168"
+                    - generic [ref=f11e1217]:
+                      - generic [ref=f11e1218]:
+                        - img "gold medal" [ref=f11e1219]
+                        - text: Gold
+                      - button "More options for this notebook" [ref=f11e1220] [cursor=pointer]: more_horiz
+              - listitem "Biohub Solution List Item" [ref=f11e1221]:
+                - generic [ref=f11e1222]:
+                  - link "Biohub Solution" [ref=f11e1223] [cursor=pointer]:
+                    - generic [ref=f11e1224]:
+                      - link "KAIWALYA RAUT's profile (opens in a new tab)" [ref=f11e1228]:
+                        - /url: /kaiwalyaatulraut
+                        - generic "KAIWALYA RAUT" [ref=f11e1229]
+                      - generic [ref=f11e1233]:
+                        - generic [ref=f11e1234]: Biohub Solution
+                        - generic [ref=f11e1235]: Updated 2mo ago
+                        - generic [ref=f11e1238]:
+                          - text: "Score: 0.966 ·"
+                          - link "0 comments" [ref=f11e1239]:
+                            - /url: /code/kaiwalyaatulraut/biohub-solution/comments
+                          - text: ·
+                          - generic [ref=f11e1240]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1241]: "+5"
+                  - generic [ref=f11e1244]:
+                    - generic [ref=f11e1245]:
+                      - button "Upvote" [ref=f11e1246] [cursor=pointer]:
+                        - generic [ref=f11e1247]: arrow_drop_up
+                      - generic "69 votes" [ref=f11e1248]: "69"
+                    - generic [ref=f11e1249]:
+                      - generic [ref=f11e1250]:
+                        - img "silver medal" [ref=f11e1251]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1252] [cursor=pointer]: more_horiz
+              - listitem "Biohub Competition Solution List Item" [ref=f11e1253]:
+                - generic [ref=f11e1254]:
+                  - link "Biohub Competition Solution" [ref=f11e1255] [cursor=pointer]:
+                    - generic [ref=f11e1256]:
+                      - link "KAIWALYA RAUT's profile (opens in a new tab)" [ref=f11e1260]:
+                        - /url: /kaiwalyaatulraut
+                        - generic "KAIWALYA RAUT" [ref=f11e1261]
+                      - generic [ref=f11e1265]:
+                        - generic [ref=f11e1266]: Biohub Competition Solution
+                        - generic [ref=f11e1267]:
+                          - generic [ref=f11e1268]:
+                            - text: Notebook copied with edits from
+                            - link "暗黑AGI" [ref=f11e1269]:
+                              - /url: /code/boristown/agi-biohub-cell-tracking
+                          - text: ·
+                          - generic [ref=f11e1270]: Updated 2mo ago
+                        - generic [ref=f11e1272]:
+                          - text: "Score: 0.965 ·"
+                          - link "0 comments" [ref=f11e1273]:
+                            - /url: /code/kaiwalyaatulraut/biohub-competition-solution/comments
+                          - text: ·
+                          - generic [ref=f11e1274]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1275]: "+2"
+                  - generic [ref=f11e1278]:
+                    - generic [ref=f11e1279]:
+                      - button "Upvote" [ref=f11e1280] [cursor=pointer]:
+                        - generic [ref=f11e1281]: arrow_drop_up
+                      - generic "84 votes" [ref=f11e1282]: "84"
+                    - generic [ref=f11e1283]:
+                      - generic [ref=f11e1284]:
+                        - img "silver medal" [ref=f11e1285]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1286] [cursor=pointer]: more_horiz
+              - listitem "biohub-v6-ultra-best List Item" [ref=f11e1287]:
+                - generic [ref=f11e1288]:
+                  - link "biohub-v6-ultra-best" [ref=f11e1289] [cursor=pointer]:
+                    - generic [ref=f11e1290]:
+                      - link "Aman Atar's profile (opens in a new tab)" [ref=f11e1294]:
+                        - /url: /amanatar
+                        - generic "Aman Atar" [ref=f11e1295]
+                      - generic [ref=f11e1299]:
+                        - generic [ref=f11e1300]: biohub-v6-ultra-best
+                        - generic [ref=f11e1301]: Updated 2mo ago
+                        - generic [ref=f11e1304]:
+                          - text: "Score: 0.964 ·"
+                          - link "0 comments" [ref=f11e1305]:
+                            - /url: /code/amanatar/biohub-v6-ultra-best/comments
+                          - text: ·
+                          - generic [ref=f11e1306]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1307]: "+1"
+                  - generic [ref=f11e1310]:
+                    - generic [ref=f11e1311]:
+                      - button "Upvote" [ref=f11e1312] [cursor=pointer]:
+                        - generic [ref=f11e1313]: arrow_drop_up
+                      - generic "22 votes" [ref=f11e1314]: "22"
+                    - generic [ref=f11e1315]:
+                      - generic [ref=f11e1316]:
+                        - img "bronze medal" [ref=f11e1317]
+                        - text: Bronze
+                      - button "More options for this notebook" [ref=f11e1318] [cursor=pointer]: more_horiz
+              - listitem "Metric_hack_last_call List Item" [ref=f11e1319]:
+                - generic [ref=f11e1320]:
+                  - link "Metric_hack_last_call" [ref=f11e1321] [cursor=pointer]:
+                    - generic [ref=f11e1322]:
+                      - link "Ravindra's profile (opens in a new tab)" [ref=f11e1326]:
+                        - /url: /ravi123a321at
+                        - generic "Ravindra" [ref=f11e1327]
+                      - generic [ref=f11e1331]:
+                        - generic [ref=f11e1332]: Metric_hack_last_call
+                        - generic [ref=f11e1333]:
+                          - generic [ref=f11e1334]:
+                            - text: Notebook copied with edits from
+                            - link "Кирилл Алешин" [ref=f11e1335]:
+                              - /url: /code/kirneo/metric-hack-last-call-update
+                          - text: ·
+                          - generic [ref=f11e1336]: Updated 2mo ago
+                        - generic [ref=f11e1338]:
+                          - text: "Score: 0.963 ·"
+                          - link "0 comments" [ref=f11e1339]:
+                            - /url: /code/ravi123a321at/metric-hack-last-call/comments
+                          - text: ·
+                          - generic [ref=f11e1340]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1341]: "+1"
+                  - generic [ref=f11e1344]:
+                    - generic [ref=f11e1345]:
+                      - button "Upvote" [ref=f11e1346] [cursor=pointer]:
+                        - generic [ref=f11e1347]: arrow_drop_up
+                      - generic "14 votes" [ref=f11e1348]: "14"
+                    - button "More options for this notebook" [ref=f11e1350] [cursor=pointer]: more_horiz
+              - listitem "biohub-metric-hack-last-call List Item" [ref=f11e1351]:
+                - generic [ref=f11e1352]:
+                  - link "biohub-metric-hack-last-call" [ref=f11e1353] [cursor=pointer]:
+                    - generic [ref=f11e1354]:
+                      - link "Aman Atar's profile (opens in a new tab)" [ref=f11e1358]:
+                        - /url: /amanatar
+                        - generic "Aman Atar" [ref=f11e1359]
+                      - generic [ref=f11e1363]:
+                        - generic [ref=f11e1364]: biohub-metric-hack-last-call
+                        - generic [ref=f11e1365]: Updated 2mo ago
+                        - generic [ref=f11e1368]:
+                          - text: "Score: 0.963 ·"
+                          - link "0 comments" [ref=f11e1369]:
+                            - /url: /code/amanatar/biohub-metric-hack-last-call/comments
+                          - text: ·
+                          - generic [ref=f11e1370]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1371]: "+1"
+                  - generic [ref=f11e1374]:
+                    - generic [ref=f11e1375]:
+                      - button "Upvote" [ref=f11e1376] [cursor=pointer]:
+                        - generic [ref=f11e1377]: arrow_drop_up
+                      - generic "21 votes" [ref=f11e1378]: "21"
+                    - button "More options for this notebook" [ref=f11e1380] [cursor=pointer]: more_horiz
+              - listitem "metric hack - minimal baseline-tta-2gpu List Item" [ref=f11e1381]:
+                - generic [ref=f11e1382]:
+                  - link "metric hack - minimal baseline-tta-2gpu" [ref=f11e1383] [cursor=pointer]:
+                    - generic [ref=f11e1384]:
+                      - link "outwrest's profile (opens in a new tab)" [ref=f11e1388]:
+                        - /url: /outwrest
+                        - generic "outwrest" [ref=f11e1389]
+                      - generic [ref=f11e1393]:
+                        - generic [ref=f11e1394]: metric hack - minimal baseline-tta-2gpu
+                        - generic [ref=f11e1395]:
+                          - generic [ref=f11e1396]:
+                            - text: Notebook copied with edits from
+                            - link "hengck23" [ref=f11e1397]:
+                              - /url: /code/hengck23/minimal-baseline-tta-2gpu
+                          - text: ·
+                          - generic [ref=f11e1398]: Updated 2mo ago
+                        - generic [ref=f11e1400]:
+                          - text: "Score: 0.95 ·"
+                          - link "6 comments" [ref=f11e1401]:
+                            - /url: /code/outwrest/metric-hack-minimal-baseline-tta-2gpu/comments
+                          - text: ·
+                          - generic [ref=f11e1402]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1403]: "+1"
+                  - generic [ref=f11e1406]:
+                    - generic [ref=f11e1407]:
+                      - button "Upvote" [ref=f11e1408] [cursor=pointer]:
+                        - generic [ref=f11e1409]: arrow_drop_up
+                      - generic "90 votes" [ref=f11e1410]: "90"
+                    - generic [ref=f11e1411]:
+                      - generic [ref=f11e1412]:
+                        - img "silver medal" [ref=f11e1413]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1414] [cursor=pointer]: more_horiz
+              - listitem "Cell tracking List Item" [ref=f11e1415]:
+                - generic [ref=f11e1416]:
+                  - link "Cell tracking" [ref=f11e1417] [cursor=pointer]:
+                    - generic [ref=f11e1418]:
+                      - link "Mr. Bruce's profile (opens in a new tab)" [ref=f11e1422]:
+                        - /url: /muhammaddanyalmalik
+                        - generic "Mr. Bruce" [ref=f11e1423]
+                      - generic [ref=f11e1427]:
+                        - generic [ref=f11e1428]: Cell tracking
+                        - generic [ref=f11e1429]: Updated 2mo ago
+                        - generic [ref=f11e1432]:
+                          - text: "Score: 0.95 ·"
+                          - link "0 comments" [ref=f11e1433]:
+                            - /url: /code/muhammaddanyalmalik/cell-tracking/comments
+                          - text: ·
+                          - generic [ref=f11e1434]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1435]: "+1"
+                  - generic [ref=f11e1438]:
+                    - generic [ref=f11e1439]:
+                      - button "Upvote" [ref=f11e1440] [cursor=pointer]:
+                        - generic [ref=f11e1441]: arrow_drop_up
+                      - generic "10 votes" [ref=f11e1442]: "10"
+                    - button "More options for this notebook" [ref=f11e1444] [cursor=pointer]: more_horiz
+              - listitem "Dark-AGI-Biohub Cell Tracking Solution List Item" [ref=f11e1445]:
+                - generic [ref=f11e1446]:
+                  - link "Dark-AGI-Biohub Cell Tracking Solution" [ref=f11e1447] [cursor=pointer]:
+                    - generic [ref=f11e1448]:
+                      - link "Ravindra's profile (opens in a new tab)" [ref=f11e1452]:
+                        - /url: /ravi123a321at
+                        - generic "Ravindra" [ref=f11e1453]
+                      - generic [ref=f11e1457]:
+                        - generic [ref=f11e1458]: Dark-AGI-Biohub Cell Tracking Solution
+                        - generic [ref=f11e1459]:
+                          - generic [ref=f11e1460]:
+                            - text: Notebook copied with edits from
+                            - link "暗黑AGI" [ref=f11e1461]:
+                              - /url: /code/boristown/dark-agi-biohub-cell-tracking-solution
+                          - text: ·
+                          - generic [ref=f11e1462]: Updated 2mo ago
+                        - generic [ref=f11e1464]:
+                          - text: "Score: 0.95 ·"
+                          - link "0 comments" [ref=f11e1465]:
+                            - /url: /code/ravi123a321at/dark-agi-biohub-cell-tracking-solution/comments
+                          - text: ·
+                          - generic [ref=f11e1466]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1467]: "+1"
+                  - generic [ref=f11e1470]:
+                    - generic [ref=f11e1471]:
+                      - button "Upvote" [ref=f11e1472] [cursor=pointer]:
+                        - generic [ref=f11e1473]: arrow_drop_up
+                      - generic "10 votes" [ref=f11e1474]: "10"
+                    - button "More options for this notebook" [ref=f11e1476] [cursor=pointer]: more_horiz
+              - listitem "Biohub 0.95 List Item" [ref=f11e1477]:
+                - generic [ref=f11e1478]:
+                  - link "Biohub 0.95" [ref=f11e1479] [cursor=pointer]:
+                    - generic [ref=f11e1480]:
+                      - link "Anvith Pothula's profile (opens in a new tab)" [ref=f11e1484]:
+                        - /url: /anvithpothula
+                        - generic "Anvith Pothula" [ref=f11e1485]
+                      - generic [ref=f11e1489]:
+                        - generic [ref=f11e1490]: Biohub 0.95
+                        - generic [ref=f11e1491]: Updated 2mo ago
+                        - generic [ref=f11e1494]:
+                          - text: "Score: 0.95 ·"
+                          - link "0 comments" [ref=f11e1495]:
+                            - /url: /code/anvithpothula/biohub-0-95/comments
+                          - text: ·
+                          - generic [ref=f11e1496]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1497]: "+1"
+                  - generic [ref=f11e1500]:
+                    - generic [ref=f11e1501]:
+                      - button "Upvote" [ref=f11e1502] [cursor=pointer]:
+                        - generic [ref=f11e1503]: arrow_drop_up
+                      - generic "16 votes" [ref=f11e1504]: "16"
+                    - generic [ref=f11e1505]:
+                      - generic [ref=f11e1506]:
+                        - img "bronze medal" [ref=f11e1507]
+                        - text: Bronze
+                      - button "More options for this notebook" [ref=f11e1508] [cursor=pointer]: more_horiz
+              - listitem "Biohub Harmonic Fusion List Item" [ref=f11e1509]:
+                - generic [ref=f11e1510]:
+                  - link "Biohub Harmonic Fusion" [ref=f11e1511] [cursor=pointer]:
+                    - generic [ref=f11e1512]:
+                      - link "Igor Zharov's profile (opens in a new tab)" [ref=f11e1516]:
+                        - /url: /flexonafft
+                        - generic "Igor Zharov" [ref=f11e1517]
+                      - generic [ref=f11e1521]:
+                        - generic [ref=f11e1522]: Biohub Harmonic Fusion
+                        - generic [ref=f11e1523]: Updated 2d ago
+                        - generic [ref=f11e1526]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1527]:
+                            - /url: /code/flexonafft/biohub-harmonic-fusion/comments
+                          - text: ·
+                          - generic [ref=f11e1528]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1529]: "+3"
+                  - generic [ref=f11e1532]:
+                    - generic [ref=f11e1533]:
+                      - button "Upvote" [ref=f11e1534] [cursor=pointer]:
+                        - generic [ref=f11e1535]: arrow_drop_up
+                      - generic "186 votes" [ref=f11e1536]: "186"
+                    - generic [ref=f11e1537]:
+                      - generic [ref=f11e1538]:
+                        - img "gold medal" [ref=f11e1539]
+                        - text: Gold
+                      - button "More options for this notebook" [ref=f11e1540] [cursor=pointer]: more_horiz
+              - listitem "Biohub Lineage Forge — Precision Tracking List Item" [ref=f11e1541]:
+                - generic [ref=f11e1542]:
+                  - link "Biohub Lineage Forge — Precision Tracking" [ref=f11e1543] [cursor=pointer]:
+                    - generic [ref=f11e1544]:
+                      - link "Igor Zharov's profile (opens in a new tab)" [ref=f11e1548]:
+                        - /url: /flexonafft
+                        - generic "Igor Zharov" [ref=f11e1549]
+                      - generic [ref=f11e1553]:
+                        - generic [ref=f11e1554]: Biohub Lineage Forge — Precision Tracking
+                        - generic [ref=f11e1555]: Updated 2d ago
+                        - generic [ref=f11e1558]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1559]:
+                            - /url: /code/flexonafft/biohub-lineage-forge-precision-tracking/comments
+                          - text: ·
+                          - generic [ref=f11e1560]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1561]: "+3"
+                  - generic [ref=f11e1564]:
+                    - generic [ref=f11e1565]:
+                      - button "Upvote" [ref=f11e1566] [cursor=pointer]:
+                        - generic [ref=f11e1567]: arrow_drop_up
+                      - generic "87 votes" [ref=f11e1568]: "87"
+                    - generic [ref=f11e1569]:
+                      - generic [ref=f11e1570]:
+                        - img "silver medal" [ref=f11e1571]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1572] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta List Item" [ref=f11e1573]:
+                - generic [ref=f11e1574]:
+                  - link "biohub-lf-dctta" [ref=f11e1575] [cursor=pointer]:
+                    - generic [ref=f11e1576]:
+                      - link "Seung Jae Lee's profile (opens in a new tab)" [ref=f11e1580]:
+                        - /url: /sjlee101
+                        - generic "Seung Jae Lee" [ref=f11e1581]
+                      - generic [ref=f11e1585]:
+                        - generic [ref=f11e1586]: biohub-lf-dctta
+                        - generic [ref=f11e1587]: Updated 3d ago
+                        - generic [ref=f11e1590]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1591]:
+                            - /url: /code/sjlee101/biohub-lf-dctta/comments
+                          - text: ·
+                          - generic [ref=f11e1592]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1593]: "+3"
+                  - generic [ref=f11e1596]:
+                    - generic [ref=f11e1597]:
+                      - button "Upvote" [ref=f11e1598] [cursor=pointer]:
+                        - generic [ref=f11e1599]: arrow_drop_up
+                      - generic "72 votes" [ref=f11e1600]: "72"
+                    - generic [ref=f11e1601]:
+                      - generic [ref=f11e1602]:
+                        - img "silver medal" [ref=f11e1603]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1604] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta-v020 List Item" [ref=f11e1605]:
+                - generic [ref=f11e1606]:
+                  - link "biohub-lf-dctta-v020" [ref=f11e1607] [cursor=pointer]:
+                    - generic [ref=f11e1608]:
+                      - link "Seung Jae Lee's profile (opens in a new tab)" [ref=f11e1612]:
+                        - /url: /sjlee101
+                        - generic "Seung Jae Lee" [ref=f11e1613]
+                      - generic [ref=f11e1617]:
+                        - generic [ref=f11e1618]: biohub-lf-dctta-v020
+                        - generic [ref=f11e1619]: Updated 3d ago
+                        - generic [ref=f11e1622]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1623]:
+                            - /url: /code/sjlee101/biohub-lf-dctta-v020/comments
+                          - text: ·
+                          - generic [ref=f11e1624]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1625]: "+3"
+                  - generic [ref=f11e1628]:
+                    - generic [ref=f11e1629]:
+                      - button "Upvote" [ref=f11e1630] [cursor=pointer]:
+                        - generic [ref=f11e1631]: arrow_drop_up
+                      - generic "57 votes" [ref=f11e1632]: "57"
+                    - generic [ref=f11e1633]:
+                      - generic [ref=f11e1634]:
+                        - img "silver medal" [ref=f11e1635]
+                        - text: Silver
+                      - button "More options for this notebook" [ref=f11e1636] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta020-sectta1 List Item" [ref=f11e1637]:
+                - generic [ref=f11e1638]:
+                  - link "biohub-lf-dctta020-sectta1" [ref=f11e1639] [cursor=pointer]:
+                    - generic [ref=f11e1640]:
+                      - link "Seung Jae Lee's profile (opens in a new tab)" [ref=f11e1644]:
+                        - /url: /sjlee101
+                        - generic "Seung Jae Lee" [ref=f11e1645]
+                      - generic [ref=f11e1649]:
+                        - generic [ref=f11e1650]: biohub-lf-dctta020-sectta1
+                        - generic [ref=f11e1651]: Updated 2d ago
+                        - generic [ref=f11e1654]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1655]:
+                            - /url: /code/sjlee101/biohub-lf-dctta020-sectta1/comments
+                          - text: ·
+                          - generic [ref=f11e1656]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1657]: "+3"
+                  - generic [ref=f11e1660]:
+                    - generic [ref=f11e1661]:
+                      - button "Upvote" [ref=f11e1662] [cursor=pointer]:
+                        - generic [ref=f11e1663]: arrow_drop_up
+                      - generic "2 votes" [ref=f11e1664]: "2"
+                    - button "More options for this notebook" [ref=f11e1666] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta-v020 List Item" [ref=f11e1667]:
+                - generic [ref=f11e1668]:
+                  - link "biohub-lf-dctta-v020" [ref=f11e1669] [cursor=pointer]:
+                    - generic [ref=f11e1670]:
+                      - link "Vanshika's profile (opens in a new tab)" [ref=f11e1674]:
+                        - /url: /crystalbaby
+                        - generic "Vanshika" [ref=f11e1675]
+                      - generic [ref=f11e1679]:
+                        - generic [ref=f11e1680]: biohub-lf-dctta-v020
+                        - generic [ref=f11e1681]:
+                          - generic [ref=f11e1682]:
+                            - text: Notebook copied with edits from
+                            - link "Seung Jae Lee" [ref=f11e1683]:
+                              - /url: /code/sjlee101/biohub-lf-dctta-v020
+                          - text: ·
+                          - generic [ref=f11e1684]: Updated 2d ago
+                        - generic [ref=f11e1686]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1687]:
+                            - /url: /code/crystalbaby/biohub-lf-dctta-v020/comments
+                          - text: ·
+                          - generic [ref=f11e1688]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1689]: "+3"
+                  - generic [ref=f11e1692]:
+                    - generic [ref=f11e1693]:
+                      - button "Upvote" [ref=f11e1694] [cursor=pointer]:
+                        - generic [ref=f11e1695]: arrow_drop_up
+                      - generic "16 votes" [ref=f11e1696]: "16"
+                    - button "More options for this notebook" [ref=f11e1698] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta025-sectta1 List Item" [ref=f11e1699]:
+                - generic [ref=f11e1700]:
+                  - link "biohub-lf-dctta025-sectta1" [ref=f11e1701] [cursor=pointer]:
+                    - generic [ref=f11e1702]:
+                      - link "Seung Jae Lee's profile (opens in a new tab)" [ref=f11e1706]:
+                        - /url: /sjlee101
+                        - generic "Seung Jae Lee" [ref=f11e1707]
+                      - generic [ref=f11e1711]:
+                        - generic [ref=f11e1712]: biohub-lf-dctta025-sectta1
+                        - generic [ref=f11e1713]: Updated 2d ago
+                        - generic [ref=f11e1716]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1717]:
+                            - /url: /code/sjlee101/biohub-lf-dctta025-sectta1/comments
+                          - text: ·
+                          - generic [ref=f11e1718]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1719]: "+3"
+                  - generic [ref=f11e1722]:
+                    - generic [ref=f11e1723]:
+                      - button "Upvote" [ref=f11e1724] [cursor=pointer]:
+                        - generic [ref=f11e1725]: arrow_drop_up
+                      - generic "4 votes" [ref=f11e1726]: "4"
+                    - button "More options for this notebook" [ref=f11e1728] [cursor=pointer]: more_horiz
+              - listitem "biohub-lf-dctta020-sectta1-sister16 List Item" [ref=f11e1729]:
+                - generic [ref=f11e1730]:
+                  - link "biohub-lf-dctta020-sectta1-sister16" [ref=f11e1731] [cursor=pointer]:
+                    - generic [ref=f11e1732]:
+                      - link "Seung Jae Lee's profile (opens in a new tab)" [ref=f11e1736]:
+                        - /url: /sjlee101
+                        - generic "Seung Jae Lee" [ref=f11e1737]
+                      - generic [ref=f11e1741]:
+                        - generic [ref=f11e1742]: biohub-lf-dctta020-sectta1-sister16
+                        - generic [ref=f11e1743]: Updated 2d ago
+                        - generic [ref=f11e1746]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1747]:
+                            - /url: /code/sjlee101/biohub-lf-dctta020-sectta1-sister16/comments
+                          - text: ·
+                          - generic [ref=f11e1748]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1749]: "+3"
+                  - generic [ref=f11e1752]:
+                    - generic [ref=f11e1753]:
+                      - button "Upvote" [ref=f11e1754] [cursor=pointer]:
+                        - generic [ref=f11e1755]: arrow_drop_up
+                      - generic "2 votes" [ref=f11e1756]: "2"
+                    - button "More options for this notebook" [ref=f11e1758] [cursor=pointer]: more_horiz
+              - listitem "Test biohub-lf-dctta List Item" [ref=f11e1759]:
+                - generic [ref=f11e1760]:
+                  - link "Test biohub-lf-dctta" [ref=f11e1761] [cursor=pointer]:
+                    - generic [ref=f11e1762]:
+                      - link "m-toshi desu's profile (opens in a new tab)" [ref=f11e1766]:
+                        - /url: /mtoshidesu
+                        - generic "m-toshi desu" [ref=f11e1767]
+                      - generic [ref=f11e1771]:
+                        - generic [ref=f11e1772]: Test biohub-lf-dctta
+                        - generic [ref=f11e1773]:
+                          - generic [ref=f11e1774]:
+                            - text: Notebook copied with edits from
+                            - link "Seung Jae Lee" [ref=f11e1775]:
+                              - /url: /code/sjlee101/biohub-lf-dctta
+                          - text: ·
+                          - generic [ref=f11e1776]: Updated 2d ago
+                        - generic [ref=f11e1778]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1779]:
+                            - /url: /code/mtoshidesu/test-biohub-lf-dctta/comments
+                          - text: ·
+                          - generic [ref=f11e1780]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1781]: "+3"
+                  - generic [ref=f11e1784]:
+                    - generic [ref=f11e1785]:
+                      - button "Upvote" [ref=f11e1786] [cursor=pointer]:
+                        - generic [ref=f11e1787]: arrow_drop_up
+                      - generic "0 votes" [ref=f11e1788]: "0"
+                    - button "More options for this notebook" [ref=f11e1790] [cursor=pointer]: more_horiz
+              - listitem "biohub-harm List Item" [ref=f11e1791]:
+                - generic [ref=f11e1792]:
+                  - link "biohub-harm" [ref=f11e1793] [cursor=pointer]:
+                    - generic [ref=f11e1794]:
+                      - link "Arnav170's profile (opens in a new tab)" [ref=f11e1798]:
+                        - /url: /arnav170
+                        - generic "Arnav170" [ref=f11e1799]
+                      - generic [ref=f11e1803]:
+                        - generic [ref=f11e1804]: biohub-harm
+                        - generic [ref=f11e1805]: Updated 1d ago
+                        - generic [ref=f11e1808]:
+                          - text: "Score: 0.947 ·"
+                          - link "0 comments" [ref=f11e1809]:
+                            - /url: /code/arnav170/biohub-harm/comments
+                          - text: ·
+                          - generic [ref=f11e1810]:
+                            - text: Biohub - Cell Tracking During Development
+                            - generic [ref=f11e1811]: "+3"
+                  - generic [ref=f11e1814]:
+                    - generic [ref=f11e1815]:
+                      - button "Upvote" [ref=f11e1816] [cursor=pointer]:
+                        - generic [ref=f11e1817]: arrow_drop_up
+                      - generic "0 votes" [ref=f11e1818]: "0"
+                    - button "More options for this notebook" [ref=f11e1820] [cursor=pointer]: more_horiz
+              - listitem "undefined List Item" [ref=f11e1821]
+  - alert [ref=f11e859]

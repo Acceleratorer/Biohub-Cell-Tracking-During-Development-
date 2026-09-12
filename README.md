@@ -276,6 +276,65 @@ The run log also confirms four expected Gurobi-to-SCIP fallbacks because no Guro
 
 The original notebook is intentionally preserved. Validate this candidate on embryo-disjoint training folds before spending a Kaggle submission.
 
+### Current candidate state (2026-09-11)
+
+`biohub-solution-0.970-candidate.ipynb` now defaults to a metric-faithful final artifact:
+
+- `POINT_THRESHOLD = 0.97` and `EDGE_TOPK_PARENTS = 2`, matching the compact high-threshold variant as a controlled hypothesis;
+- gap closing and short-component filtering are disabled by default;
+- negative-time hub/fork augmentation is disabled by default;
+- local evaluation reads the final `submission.csv`, not the pre-postprocess GEFF;
+- final CSV invariants are checked before the notebook exits.
+
+This is an unscored candidate. The linked Kaggle run remains the only confirmed result for the current path: 0.883. The next useful evidence is one Kaggle run of this clean real-frame output, followed by a local train-fold comparison of raw ILP, gap repair, and threshold variants.
+
+### Public multi-scale DoG ablation (2026-09-11)
+
+The public discussion [Rule-Based Baseline: Gold Medal Zone without Deep Learning](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716952) reports that detection was the largest practical lever:
+
+| Method | CV edge score | Public LB |
+|---|---:|---:|
+| Basic DoG + Hungarian | 0.682 | 0.663 |
+| Tuned DoG + 8 µm linking | 0.791 | 0.786 |
+| + gap closing | 0.807 | 0.784 |
+| + division edges | 0.810 | 0.778 |
+| Multi-scale DoG | 0.824 | 0.826 |
+
+The exact public source and output for script version `331751321` were inspected. Its detector uses:
+
+```text
+XY downsample:       4
+DoG scale pairs:     (1.5, 4.0), (2.2, 5.5) µm
+DoG threshold:       0.045
+intensity percentile: 50
+physical NMS radius: 3.2 µm
+maximum peaks/frame: 40,000
+centroid refinement: original-resolution intensity centroid, window (1,3,3)
+link gate:           8 µm
+```
+
+Its public submission contains 129,515 nodes and 121,799 edges across the four dummy clips. The latest public source produces a byte-identical `submission.csv` to scored version `331751321`, so these settings are tied directly to the reported 0.826 result.
+
+`biohub-solution-dog-union-ablation.ipynb` is a separate, reversible experiment. It defaults to:
+
+```python
+DETECTION_MODE = "dog"
+EXPERIMENT_TAG = "dog_public_multiscale_neural_edges"
+USE_GAP_CLOSING = False
+USE_SHORT_COMPONENT_FILTER = False
+USE_SYNTHETIC_AUGMENTATION = False
+```
+
+The notebook reproduces the public detector exactly but samples the trained U-Net features at its detections, scores links with the existing transformer, and performs the existing ILP solve. `DETECTION_MODE = "neural"` preserves the neural detector path; `"neural_dog_union"` is available only as a higher-memory follow-up because dense transformer scoring grows quadratically with detections per adjacent frame.
+
+This ablation is unscored. It is not evidence of a 0.970 solution. The next valid comparison is:
+
+1. clean neural detector + transformer + ILP;
+2. public DoG detector + transformer + ILP;
+3. only if (2) improves, a capped or gated neural/DoG union.
+
+Do not enable the public baseline's gap repair by default. Its own reported LB fell from 0.786 to 0.784 when gap closing was added, and adding division edges fell further to 0.778.
+
 All four neural notebooks share nearly the same model and inference core. The main experimental changes are:
 
 - point detection threshold;
@@ -1117,6 +1176,9 @@ The most likely path from the current reported 0.966 level to the current public
 - `src/tracking_cellmot/division_metrics.py`.
 - `scripts/train_unet_transformer.py`.
 - `scripts/predict_unet_transformer.py`.
+- [Competition welcome and metric tooling discussion](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716062).
+- [Public rule-based DoG baseline discussion](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716952) and scored [script version `331751321`](https://www.kaggle.com/code/isakatsuyoshi/biohub-rule-based-baseline?scriptVersionId=331751321).
+- [Synthetic division dataset discussion](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732103), used only for physical-motion/division hypotheses, not as hidden-test evidence.
 
 ### Secondary source
 
@@ -1131,3 +1193,4 @@ The notebook-specific runtime, node counts, edge counts, and configuration value
 - `biohub-v6-ultra-best-0.964.ipynb`
 - `improved-metric-hack-last-call_0.966.ipynb`
 - `demo_test.ipynb`
+- `biohub-solution-dog-union-ablation.ipynb`

@@ -1,0 +1,18 @@
+[     551ms] [LOG]  _                       _       
+| |    Welcome to       | |      
+| | __ ___   __ _  __ _ | | ___  
+| |/ /|__ \ / _` |/ _` || |/ _ \ 
+|   < / _  | (_| | (_| || |  __/ 
+|_|\_\\__,_|\__, |\__, ||_|\___| 
+             __/ | __/ |         
+            |___/ |___/          
+ @ https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:0
+[     586ms] [WARNING] No `HydrateFallback` element provided to render during initial hydration @ https://www.kaggle.com/static/assets/vendor.js?v=464203c1a602d610:255
+[    1440ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.kaggle.com/api/i/competitions.PageService/GetPage:0
+[    1773ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.kaggle.com/api/i/discussions.WriteUpsService/GetWriteUpByTopicId:0
+[    1774ms] t: Not found
+    at E (https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:1:1803751)
+    at https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:1:2688758
+    at Object.<anonymous> (https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:1:2686459)
+    at D (https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:1:2685055)
+    at i (https://www.kaggle.com/static/assets/app.js?v=3e95f77208ef59df:1:2685252)
